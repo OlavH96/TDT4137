@@ -14,11 +14,11 @@
   - [ ] c)
   - [ ] d)
   - [ ] e)
-- [ ] 3.
-  - [ ] a)
-  - [ ] b)
-  - [ ] c)
-  - [ ] d)
+- [x] 3.
+  - [x] a)
+  - [x] b)
+  - [x] c)
+  - [x] d)
 
 
 
@@ -27,11 +27,11 @@
 a) *Beskriv kort hovedmodulene i de kognitive arkitekturene ICARUS og CLARION*
 
 
-<p style=text-align:center>**ICARUS**</p>
+**ICARUS**
 
 ICARUS er en kognitiv arkitektur som fokuserer på fysiske agenter i en fysisk verden. ICARUS lenker kongnisjon til persepsjon og handlinger. Hovedmodulene i ICARUS er minne (kort- og langtids-) som bruker symbolske strukturer, og kognitiv prosessering (hente, velge, handling).
 
-<p style=text-align:center>**CLARION**</p>
+**CLARION**
 
 ICARUS er en kognitiv arkitektur som fokuserer på en dualitet med tanke på representasjon av data, disse er eksplisitt og implisitt kunnskap. CLARION består av hovedmodulene ACS (Action-Centered Subsystem), NACS (Non Action-Centered Subsystem), MS (Motivational Subsystem), og MCS (Meta-Cognitive Subsystem).
 
@@ -39,7 +39,7 @@ ICARUS er en kognitiv arkitektur som fokuserer på en dualitet med tanke på rep
 b) *Gjør en sammenligning mellom de to arkitekturene med hensyn på*
 1. *Underliggende filosofi og motivering*
 
-  Icarus
+  **ICARUS**
 
   Den underliggende filosofien i Icarus er at man bør modellere et kognitivt system basert på realiteten, altså den fysiske verden.
 
@@ -47,39 +47,40 @@ b) *Gjør en sammenligning mellom de to arkitekturene med hensyn på*
 
   Icarus prøver å skape et system som modellerer høyere nivå kognisjon hos mennesker, samtidig som det prøver å være konsistent med pykologi, prøver å framvise så mange menneskelige kognitive funksjoner som mulig, og skal kunne støtte intelligente agenter i mange forskjellige situasjoner.
 
-  CLARION
+  **CLARION**
 
   CLARION prøver å lage et system for menneskelig kognisjon med fokus på kognisjon, motivasjon, miljø interaksjonen. I CLARION prøver de å oppnå flere typer læring, slik som selvstendig-, top-down-, og bottom-up-læring. På denne måten håper de å etterligne menneskets kognisjon på best mulig måte. CLARION prøver å gjøre dette ved å dele opp systemet i subsystemene nevnt i forrige oppgave.
 
 
 2. *Minnestrukturer (memories) - typer minner og hvordan innholdet representeres*
 
-  ICARUS
+  **ICARUS**
 
-  Representerer minne ved hjelp av symboler.
+  ICARUS velger å representere minne ved hjelp av symboler. Systemet har working memory (WM), som består av persepsjon-buffere, blief memory, og korttidsminne.
+  ICARUS bruker også en hierarkisk struktur for langtidsminne, altså at minner bygger på hverandre, og at lignende minner henger sammen. ICARUS har to typer langtidsminne, et deklerativt minne som brukes for konsepter, og et procedural minne som brukes for kunnskap.
 
-  Har working memory (WM), som består av persepsjon-buffere, blief memory, og korttidsminne.
+  **CLARION**
 
-  Bruker en hierarkisk struktur for langtidsminne.
+  På lik linje med ICARUS, velger også CLARION å representere minnet symolsk, men CLARION kan også lagre minne subsymbolsk.
 
-  CLARION
+  CLARION har Working Memory slik som ICARUS, men velger å bruke denne kun som en midlertidig lagring for informasjon.
 
-   Representerer minne symolsk og sybsymbolsk.
-
-   Bruker WM som midlertidig lagring.
-
-   Langtidsminne består av en deklerativ (fastslått) del, og en procedural (genererbar) del.
+  Langtidsminne består av en deklerativ (fastslått) del, og en procedural (genererbar) del. Den deklerative delen representerer den høyere-nivå kunnskapen i CLARION, altså konsepter og fakta. Den genererbare delen brukes på lavere nivå, og brukes derfor for å generere mer detaljebasert kunnskap basert på høyere nivå kunnskap når dette trengs.
 
 3. *Kognitiv syklus – fra input til aksjon*
 
-  ICARUS
+  **ICARUS**
 
-  Perception -> Perceptual Buffer / Short Term Memory -> Goal Processing -> Skill Retrival and Selection -> Problem Soving and Learning -> Execution
+  <div style="display:flex; justify-content: center; align-items:center;">
+  <img src="ICARUS_Process.png" alt="ICARUS Process" width="400"/>
+  </div>
 
-  CLARION
+  ICARUS har en fast syklus for hvordan input håndteres. Først sanser man noe input (Perception), så bruker man korttidsminne eller buffer for å lagre dette, og bruker konseptuelt minne for å utlede relevant kunnskap om denne inputen. Neste fase er "skill execution", der man legger problemet i minne og bruker en iterativ problemløsningsfase til å finne ut hvilken ferdighet man skal bruke for å reagere på problemet, dette gjøres ved å prøve å anvende problemet på flere forskjellige kjente ferdigheter iterativt helt til man finner en ferdighet som matcher problemet, denne løsningen vil lagres for senere bruk, altså har man lært noe om denne spesfikke problemstillingen. Ut ifra den handlingen som ble valgt kan man så legge denne i buffer og utføre denne handlingen mot miljøet. Så kan syklusen fortsette.   
 
+  **CLARION**
+
+  CLARION fungerer nesten som et neuralt nettverk i måten det løser problemer;
   ???
-
 
 ## Oppgave 2 &mdash; Analogiresonnering
 
@@ -90,6 +91,7 @@ a) *Forklar følgende nøkkelord fra analogy reasoning*
 >expression and the highest scientific achievements."
 > &mdash; <cite>Polya, How to Solve It, 1945</cite>
 
+En analogi handler om å se likheter i objekter på noen måter selv om objektene er ulike på andre måter, for så å sammenligne disse likhetene.
 2. *Base*
 
   Base er startobjektet i analogier, altså utsagnet eller objektet man starter med.
@@ -101,22 +103,21 @@ a) *Forklar følgende nøkkelord fra analogy reasoning*
 
   Objekter som har mange like relasjoner med andre objekter.
 
-
 b) *Fyll inn for ???? i tabellen*
 
-Mapping | Antall attributter mappet til målet | Antall relasjoner mappet til målet | Eksempel
+Mapping  | Antall attributter mappet til målet | Antall relasjoner mappet til målet | Eksempel
 --------|-------------------------------------|------------------------------------|---------
 Bokstavelig Likhet|Mange|Mange|Solsystemet K5 er som Melkeveien
 Analogi|Få|Mange|Et atom er som solsystemet vårt
 Abstraksjon|Få|Mange|Atomet er et sentralkraftsystem
-Anomall|Få|Få|Kaffe er som solsystemet vårt
+Anomali|Få|Få|Kaffe er som solsystemet vårt
 
 
 c) *Forklar systematisitets-prinsippet («principle of systematicity»)*
 
   * Dette er at man gjerne gjør analogier basert på relasjoner i stedet for isolerte attributter.
 
-  * Et predikat som passer inn i et system basert på relasjoner er med sannsynlig på bli valgt som måll enn et predikat basert på attributter.
+  * Et predikat som passer inn i et system basert på relasjoner er med sannsynlig på bli valgt som mål enn et predikat basert på attributter.
 
   * Høyere orden relasjoner er mer ønskerlig enn lavere nivå relasjner.
 
@@ -125,10 +126,18 @@ d) *Analogien “En T er som en B” definerer en mapping fra basen B til målet
 foreslår Gentner (Gentner 1983) i sitt rammeverk for analogier?*
 
   * Retrieval
+
+  I denne regelen henter velger man hva som er base i analogien, og hva som er målet.
   * Elaboration
-  * Justification
+
+  I denne fasen utdyper man om objektene, altså man finner attributter og egenskaper i disse objektene.
+
   * Mapping
 
+  I denne fasen bruker man systematisitets-prinsippet for å finne likheter i objektene basert på deres relasjoner hovedsakelig. Siden man bruker systematisitets-prinsippet finner man gjerne høyere nivå relasjoner i objektene som lettere lar seg overføre til andre objekter.
+  * Justification
+
+  I denne fasen prøver man å matche basen med målet ved å se på begge objektene sine relasjoner og bruker dette som basis for å sjekke om objektene er like på noen måte.
 
 e) *Figuren nedenfor viser en arkitektur for analogi-resonnering. Redegjør kort for MAC/FAC prinsippet,
 og hvordan den virker. Hvordan er MAC/FAC koblet til Retriever og Analogy Engine
@@ -140,8 +149,16 @@ modulene?*
 </div>
 
   * MAC: Many Are Called, henting av "baser"
+
+  Denne fasen går ut på at man henter ut mange forskjellige mulige baser og bruker bokstavelig likhet for å sjekke om objektene har noen likheter.
+
   * FAC: Few Are Chosen, velger få baser
 
+  Denne fasen prøver å skape en analogi mellom objektene ved å fokusere på strukturell mapping, altså om objektene har mange likheter eller ikke. De objektene med flest likheter blir dermed valgt som mål.
+
+  I forhold til denne figuren er MAC en del av Retriever, altså modulen som henter ut baser, denne vil hente ut mange forskjellige potensielle baser som sendes vidre i systemet.
+
+  FAC er del av Analogy-Engine i dette tilfellet; Analogy-Engine vil bruke FAC prinsippet til å velge få mål objekter basert på strukturell mapping.
 
 ## Oppgave 3 &mdash; Case-basert resonnering
 
@@ -151,13 +168,12 @@ a) *Hva er hovedprinsippet bak CBR?*
 
 b) *Hvordan kan CBR kobles til menneskers kognisjon? Gi et par eksempler*
 
-  CBR kan kobles til menneskelig kognisjon fordi ???
+  CBR kan kobles til menneskelig kognisjon fordi mennesker bruker tidligere erfaring og løsninger nå de skal løse et lignende problem.
 
-  * Humans are not relational planners
-  * Human experts are not systems of rules
-  * Human memory is story based
-
-  **noe mer**
+  Eksempler:
+  - En lege som behandler en pasient basert på tidligere erfaring med lignende symptomer.
+  - En matematiker som løser en ligning ved å bruke metoder som de har brukt tidligere på lignende problemer.
+  - En programmerer som løser et problemer ved å anvende en kunnskap om lignende problemer. For eksempel kan man bruke kunnskap om hvordan man reverserer en liste til å finne ut en algoritme for å reversere et ord.
 
 c) *Hva er en MOP i Dynamic Memory -modellen?*
 
