@@ -1,27 +1,5 @@
 # TDT4137 - Øving 4 - Olav Reppe Husby
 
-- [ ] 1.
-  - [x] a)
-  - [ ] b)
-    - [x] 1
-    - [ ] 2
-    - [ ] 3
-    - [ ] 4
-
-- [ ] 2.
-  - [ ] a)
-  - [ ] b)
-  - [ ] c)
-  - [ ] d)
-  - [ ] e)
-- [x] 3.
-  - [x] a)
-  - [x] b)
-  - [x] c)
-  - [x] d)
-
-
-
 ## Oppgave 1 &mdash; Icarus og CLARION
 
 a) *Beskriv kort hovedmodulene i de kognitive arkitekturene ICARUS og CLARION*
@@ -49,7 +27,9 @@ b) *Gjør en sammenligning mellom de to arkitekturene med hensyn på*
 
   **CLARION**
 
-  CLARION prøver å lage et system for menneskelig kognisjon med fokus på kognisjon, motivasjon, miljø interaksjonen. I CLARION prøver de å oppnå flere typer læring, slik som selvstendig-, top-down-, og bottom-up-læring. På denne måten håper de å etterligne menneskets kognisjon på best mulig måte. CLARION prøver å gjøre dette ved å dele opp systemet i subsystemene nevnt i forrige oppgave.
+  CLARION prøver å lage et system for menneskelig kognisjon med fokus på kognisjon, motivasjon, miljø interaksjonen. De mener dette etterligner den menneskelige hjernen på en god måte, og har dermed valgt å modellerer systemet på denne måten.
+
+  I CLARION prøver de å oppnå flere typer læring, slik som selvstendig-, top-down-, og bottom-up-læring. På denne måten håper de å etterligne menneskets kognisjon på best mulig måte. CLARION prøver å gjøre dette ved å dele opp systemet i subsystemene nevnt i forrige oppgave.
 
 
 2. *Minnestrukturer (memories) - typer minner og hvordan innholdet representeres*
@@ -79,8 +59,28 @@ b) *Gjør en sammenligning mellom de to arkitekturene med hensyn på*
 
   **CLARION**
 
-  CLARION fungerer nesten som et neuralt nettverk i måten det løser problemer;
-  ???
+  <div style="display:flex; justify-content: center; align-items:center;">
+  <img src="CLARION_Process.png" alt="CLARION Process" width="400"/>
+  </div>
+
+  CLARION har en mer komplisert måte å håndtere input, her blir input ført inn i 3 moduler (ACS, MS, MCS), som fungerer nesten som et neuralt nettverk i måten det løser problemer, de forskjellige modulene (subsystemene) feeder inn i hverandre helt til ACS kommer med en passende output til input basert på hva de andre systemene kom fram til basert på denne inputen.
+
+  De forskjellige subsystemene har forskjellige oppgaver:
+
+  - Action Centered
+
+  Implisitt og eksplisitt kunnskap fanges og læres, ved hjelp av reinforcement learning.
+  - Non Action Centered
+
+  Representerer deklerativ kunnskap, henter og styrer minne.
+  Styres av Action Centered subsystemet.
+  - Motivational
+
+  Styrer hvorfor systemet gjør det det gjør. Hvilke handlinger som skal maksimeres. Dette deles gjerne opp i lav-nivå motivasjon, og høy-nivå motivasjon.
+  - Meta Cognitive
+
+  MCS er knyttet til MS, og overvåker, kontrollerer, og justerer kognitive prosesser for å forbedre ytelsen i MS.
+
 
 ## Oppgave 2 &mdash; Analogiresonnering
 
@@ -97,11 +97,11 @@ En analogi handler om å se likheter i objekter på noen måter selv om objekten
   Base er startobjektet i analogier, altså utsagnet eller objektet man starter med.
 3. *Bokstavelig likhet*
 
-  Objekter som har mange like attributter, og som har mange like relasjoner.
+  Objekter som har mange like attributter, og som har mange like relasjoner. Altså at objektene er fysisk like, for eksempel melk og vann er begge væsker, med lignende egenskaper, slik som tetthet, viskositet, og bruksområde.
 
 4. *Relasjonell likhet*
 
-  Objekter som har mange like relasjoner med andre objekter.
+  Objekter som har mange like relasjoner med andre objekter, men ikke nødvendigvis mange like egenskaper. Ett vanlig eksempel er et atom og solsystemet, der begge har mange like relasjoner, slik som at de tiltrekker objekter, har en kjerne, og har objekter i bane.
 
 b) *Fyll inn for ???? i tabellen*
 
@@ -115,11 +115,11 @@ Anomali|Få|Få|Kaffe er som solsystemet vårt
 
 c) *Forklar systematisitets-prinsippet («principle of systematicity»)*
 
-  * Dette er at man gjerne gjør analogier basert på relasjoner i stedet for isolerte attributter.
+  Dette er at man gjerne gjør analogier basert på relasjoner i stedet for isolerte attributter, altå at man fokuserer på relasjonell likhet mellom objekter.
 
-  * Et predikat som passer inn i et system basert på relasjoner er med sannsynlig på bli valgt som mål enn et predikat basert på attributter.
+  Et predikat som passer inn i et system basert på relasjoner er med sannsynlig på bli valgt som mål enn et predikat basert på attributter.
 
-  * Høyere orden relasjoner er mer ønskerlig enn lavere nivå relasjner.
+  Høyere orden relasjoner er mer ønskerlig enn lavere nivå relasjner.
 
 
 d) *Analogien “En T er som en B” definerer en mapping fra basen B til målet T. Hvilke mapping- regler
@@ -156,7 +156,7 @@ modulene?*
 
   Denne fasen prøver å skape en analogi mellom objektene ved å fokusere på strukturell mapping, altså om objektene har mange likheter eller ikke. De objektene med flest likheter blir dermed valgt som mål.
 
-  I forhold til denne figuren er MAC en del av Retriever, altså modulen som henter ut baser, denne vil hente ut mange forskjellige potensielle baser som sendes vidre i systemet.
+  I forhold til denne figuren er MAC en del av Retriever, altså modulen som henter ut baser, denne vil hente ut mange forskjellige potensielle baser som sendes videre i systemet.
 
   FAC er del av Analogy-Engine i dette tilfellet; Analogy-Engine vil bruke FAC prinsippet til å velge få mål objekter basert på strukturell mapping.
 
